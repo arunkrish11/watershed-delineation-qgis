@@ -14,7 +14,22 @@ This project demonstrates watershed delineation using a Digital Elevation Model 
 
 ## Tools & Software
 - QGIS 3.16  
-- QGIS Processing Toolbox  
+- QGIS Processing Toolbox
+
+## GIS Tools Used
+The following QGIS Processing Toolbox tools were used in this project:
+- **Fill Sinks (Wang & Liu)**  
+  Used to remove depressions in the DEM to ensure proper flow direction.
+- **Strahler Order**  
+  Used to classify stream hierarchy and determine stream order.
+- **Channel Network and Drainage Basins**  
+  Used to extract stream networks based on flow accumulation threshold.
+- **Upslope Area**  
+  Used to delineate watershed boundary based on a defined outlet point.
+- **Polygon Clipping (Clip Vector)**  
+  Used to clip stream network within the watershed boundary.
+- **Clip Raster by Mask Layer**  
+  Used to clip DEM data to the watershed area.
 
 ## Methodology
 1. Load DEM and reproject to UTM  
